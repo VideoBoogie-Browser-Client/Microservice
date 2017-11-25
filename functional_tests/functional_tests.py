@@ -3,7 +3,6 @@ from selenium import webdriver
 from unittest import TestCase
 
 
-# TODO: Delete the redundant 'virtualenv' directory which is no longer needed.
 class UploadVideoTest(TestCase):
     def setUp(self):
         self.browser = webdriver.Firefox()

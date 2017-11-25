@@ -1,8 +1,9 @@
 from unittest import TestCase
-from bc.bc import app
+
+from app.main.app import app
 
 
-# TODO Reorganize application project directory structure
+# TODO Start python docs
 class UploadVideoTest(TestCase):
     def test_upload_url_responds_ok(self):
         self.client = app.test_client()

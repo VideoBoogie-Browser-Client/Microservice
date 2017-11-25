@@ -102,7 +102,7 @@ venv.bak/
 .mypy_cache/
 
 # See also: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-bc/.idea/*
+.idea/*
 
 # CMake
 cmake-build-debug/

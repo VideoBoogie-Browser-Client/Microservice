@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
+"""Example NumPy style docstrings.
+
+"""
 import os
 from flask import Flask, render_template
-
 
 # https://stackoverflow.com/questions/31002890/how-to-reference-a-html-template-from-a-different-directory-in-python-flask
 path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..',

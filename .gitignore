@@ -110,5 +110,5 @@ cmake-build-debug/
 ## File-based project format:
 *.iws
 
-## secondary virtualenv files
-virtualenv/*
+## Sphinx docs
+docs/*

@@ -109,6 +109,3 @@ cmake-build-debug/
 
 ## File-based project format:
 *.iws
-
-## Sphinx docs
-docs/*

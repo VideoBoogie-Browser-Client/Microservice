@@ -6,8 +6,8 @@ import os
 from flask import Flask, render_template
 
 # https://stackoverflow.com/questions/31002890/how-to-reference-a-html-template-from-a-different-directory-in-python-flask
-path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
-                                    'templates'))
+path = os.path.abspath(os.path.join(os.path.dirname(__file__),
+                                    '..', 'templates'))
 
 app = Flask(__name__, template_folder=path)
 

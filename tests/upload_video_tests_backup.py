@@ -3,8 +3,7 @@
 
 """
 from unittest import TestCase
-
-import app.main.setup as flask
+from app.main import app
 
 
 class UploadVideoTest(TestCase):
@@ -17,7 +16,7 @@ class UploadVideoTest(TestCase):
         Based on the hard coded uri string, '/upload', the expected response
         status should be 200 (OK).
         """
-        self.client = flask.app.test_client()
+        self.client = app.test_client()
         response = self.client.get('/upload')
         self.assertEqual(response.status_code, 200)
 
@@ -27,11 +26,10 @@ class UploadVideoTest(TestCase):
         The content should contain the string 'submit your video' somewhere
         within the body of the page.
 
-        .. note:: This is essentially testing for an existence of a constant. \
+        .. note:: This is essentially testing for an existence of a constant.
         This kind of test is of a dubious value and should probably be deleted.
-
         """
-        self.client = flask.app.test_client()
+        self.client = app.test_client()
         response = self.client.get('/upload')
         self.assertTrue('submit your video' in response.get_data(as_text=True))
 

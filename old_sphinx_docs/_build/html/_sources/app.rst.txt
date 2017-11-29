@@ -1,5 +1,0 @@
-App
-===
-
-.. automodule:: setup
-   :members:
